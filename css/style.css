@@ -1,11 +1,20 @@
+h1,
+h2,
+h5{
+	font-family: Georgia, Times, "Times New Roman", serif;
+	color: #4AAAA5;
+}
+h1,
+h5{
+	color: white;
+}
 nav{
 	background-color: white;
-	height: 10%;
 	border-bottom: 2px solid #CCCCCC;
 }
 footer{
 	background-color: gray;
-	height: 10%;
+	padding: 2%;
 	background-color: #666666;
 	border-top: 10px solid #4AAAA5;
 }
@@ -14,6 +23,28 @@ body{
 	background-image: url("../images/concrete_seamless.png");
 }
 img{
+	margin: 1% 2%;
 	width: 200px;
 	height: 200px;
+}
+#aboutMeSection,
+#connectSection{
+	border: 1px solid #CCCCCC;
+	background-color: white;
+	box-sizing: border-box;
+	padding: 10px;
+}
+#bodyContent{
+	margin-top: 3%;
+}
+#navbar-logo{
+	color: white;
+	background-color: #4AAAA5;
+	margin-left: 10%;
+}
+.img-fluid{
+	width: 75%;
+}
+.bottom-border{
+	border-bottom: 2% solid #CCCCCC;
 }
