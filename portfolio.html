@@ -1,62 +1,119 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Portfolio</title>
-	<!--Link to css file -->
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
 
+<head>
+	<!--Page tittle-->
+	<title>Hector Candelaria</title>
+	<!--Link to css file-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <!--Body-->
 <body>
-	<!--Nav-->
-	<nav>
-		<h1>Hector Candelaria</h1>
-		<a href="index.html">About</a>
-		<a href="portfolio.html">Portfolio</a>
-		<a href="contact.html">Contact</a>
-	</nav>
-	<!--Contact section -->
-	<div>
-		<!--Portfolio section-->
-		<section>
-			<h2>Portfolio</h2>
-			<div>
-				<img src="images/portfolio-01.jpg">
-				<p>Hangman</p>
+	<!--Navbar-->
+	<div class="container-fluid">
+		<nav class="row navbar navbar-expand-lg navbar-light bg-light">
+			<div class="col-md-2"></div>
+			<div class=" col-md-3 navbar-brand" id="navbar-logo">
+				<h1 class="text-center">Hector Candelaria</h1>
 			</div>
-			<div class="imageSettings">
-				<img src="images/portfolio-02.jpg">
-				<p>RPG Game</p>
+			<div class="col-md-3"></div>
+			<div class="col-md-2">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    	<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				    <ul class="navbar-nav ml-auto">
+				    	<li class="nav-item">
+				        	<a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+				    	</li>
+				    	<li class="nav-item active">	
+				        	<a class="nav-link" href="portfolio.html">Portfolio</a>
+				    	</li>
+				    	<li class="nav-item">
+				        	<a class="nav-link" href="contact.html">Contact</a>
+				    	</li>
+				    </ul>
+				</div>
 			</div>
-			<div class="imageSettings">
-				<img src="images/portfolio-03.jpg">
-				<p>Trivia Game</p>				
-			</div>
-			<div class="imageSettings">
-				<img src="images/portfolio-04.jpg">
-				<p>Rutgers Info Widget</p>	
-			</div>
-			<div class="imageSettings">
-				<img src="images/portfolio-05.jpg">
-				<p>Rock Paper Scissors</p>
-			</div>
-		</section>
+			<div class="col-md-1"></div>
+		</nav>
+	</div>
 
-		<!--Connect section-->
-		<aside>
-
-			<h2>Connect with me</h2>
-			<a href="https://github.com/hcandelaria" target="_blank"><img src="images/Github.png" alt="github"></a>
-			<a href="https://www.linkedin.com/in/hector-candelaria-986347136/" target="_blank"><img src="images/LinkedIn.png" alt="linkedin"></a>
-			<a href="https://stackoverflow.com/users/7154195/hector-candelaira?tab=profile" target="_blank"><img src="images/Stackoverflow.png" alt="stackoverflow"></a>
-		</aside>
+	<!--Body Container-->
+	<div class="container-fluid">
+		<div class="row" id="bodyContent">
+			<div class="col-md-2">
+			</div>
+			<!--Portfolio Section-->
+			<section class="col-md-5" id="portfolioSection">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 bottom-border">
+							<h2 class="text-left">Portfolio</h2>
+						</div>
+					</div>
+					<div class="container-fluid">
+						<div class="row">
+							<!--Images-->
+							<div class="col-md-6">
+								<img src="images/portfolio-01.jpg" class="img-fluid">
+								<p class="captionSettings">Hangman</p>
+							</div>
+							<div class="col-md-6">
+								<img src="images/portfolio-02.jpg" class="img-fluid">
+								<p class="captionSettings">RPG Game</p>
+							</div>
+							<div class="col-md-6">
+								<img src="images/portfolio-03.jpg" class="img-fluid">
+								<p class="captionSettings">Trivia Game</p>				
+							</div>
+							<div class="col-md-6">
+								<img src="images/portfolio-04.jpg" class="img-fluid">
+								<p class="captionSettings">Rutgers Info Widget</p>	
+							</div>
+							<div class="col-md-6">
+								<img src="images/portfolio-05.jpg" class="img-fluid">
+								<p class="captionSettings">Rock Paper Scissors</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="col-md-1">
+			</div>
+			<!--Connect Section-->
+			<aside class="col-md-3">
+				<div class="container card" id="connectSection">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="text-center bottom-border">Connect with me</h2>
+						</div>
+					</div>
+					<div class="row">
+						<!--Github image link-->
+						<div class="col-md-4">
+							<a href="https://github.com/hcandelaria" target="_blank"><img class="img-fluid rounded mx-auto d-block" src="images/Github.png" alt="github"></a>
+						</div>
+						<!--LinkedIn image link-->
+						<div class="col-md-4">
+							<a href="https://www.linkedin.com/in/hector-candelaria-986347136/" target="_blank"><img class="img-fluid rounded mx-auto d-block" src="images/LinkedIn.png" alt="linkedin"></a>
+						</div>
+							<!--Stackoverflow image link-->
+						<div class="col-md-4">
+							<a href="https://stackoverflow.com/users/7154195/hector-candelaira?tab=profile" target="_blank"><img class="img-fluid rounded mx-auto d-block" src="images/Stackoverflow.png" alt="stackoverflow"></a>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<div class="col-md-1">
+			</div>
+		</div>
 	</div>
 	<!--Footer-->
-	<footer>
-		<h5>© Copyright 2017 Hector Candelaria</h5>
+	<footer class="fixed-bottom text-center">
+		<h6>© Copyright 2017 Hector Candelaria</h6>
 	</footer>
-
 </body>
 </html>

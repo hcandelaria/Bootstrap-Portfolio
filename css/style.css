@@ -5,8 +5,17 @@ h5{
 	color: #4AAAA5;
 }
 h1,
-h5{
+h6{
+	font-weight: bold;
 	color: white;
+}
+p,
+a{
+	color: #777777;
+	line-height: 40px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
 }
 nav{
 	background-color: white;
@@ -28,6 +37,7 @@ img{
 	height: 200px;
 }
 #aboutMeSection,
+#portfolioSection,
 #connectSection{
 	border: 1px solid #CCCCCC;
 	background-color: white;
@@ -38,13 +48,12 @@ img{
 	margin-top: 3%;
 }
 #navbar-logo{
-	color: white;
 	background-color: #4AAAA5;
-	margin-left: 10%;
 }
 .img-fluid{
 	width: 75%;
 }
 .bottom-border{
-	border-bottom: 2% solid #CCCCCC;
+	border-bottom: 3px solid #CCCCCC;
+	margin-bottom: 10px;
 }
