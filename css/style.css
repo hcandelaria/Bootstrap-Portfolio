@@ -1,0 +1,19 @@
+nav{
+	background-color: white;
+	height: 10%;
+	border-bottom: 2px solid #CCCCCC;
+}
+footer{
+	background-color: gray;
+	height: 10%;
+	background-color: #666666;
+	border-top: 10px solid #4AAAA5;
+}
+body{
+	background-color: #FFFFFF;
+	background-image: url("../images/concrete_seamless.png");
+}
+img{
+	width: 200px;
+	height: 200px;
+}
