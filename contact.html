@@ -1,49 +1,108 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Contact</title>
-	<!--Link to css file -->
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<!--Page tittle-->
+	<title>Hector Candelaria</title>
+	<!--Link to css file-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 </head>
 
 <!--Body-->
 <body>
-	<!--Nav-->
-	<nav>
-		<h1>Hector Candelaria</h1>
-		<a href="index.html">About</a>
-		<a href="portfolio.html">Portfolio</a>
-		<a href="contact.html">Contact</a>
-	</nav>
-	<div>
-		<!--Contact section -->
-		<section>
-			<h2>Contact</h2>
-			<label>Name</label>
-	  		<input type="text" name="Name" value="John Smith">
-	  		<label>Email</label>
-	  		<input type="email" name="Email" value="example@gmail.com">
-	  		<label>Message</label>
-			<textarea rows="15" cols="82" name="comment" form="usrform"></textarea>
-			<button>Submit</button>
-		</section>
+		<!--Navbar-->
+		<div class="container-fluid">
+		<nav class="row navbar navbar-expand-lg bg-white customeNav">
+			<div class="col-lg-2"></div>
+			<div class="col-lg-3 navbar-brand" id="navbar-logo">
+				<a class="navbar-brand" href="index.html"><h1 class="row-fluid">Hector Candelaria</h1></a>
+			</div>
+			<div class="col-lg-3"></div>
+			<div class="col-lg-2">
+				    <ul class="navbar-nav ml-auto">
+				    	<li class="nav-item">
+				        	<a class="nav-link hoverLink" href="index.html">About<span class="sr-only">(current)</span></a>
+				    	</li>
+				    	<li class="nav-item">	
+				        	<a class="nav-link hoverLink" href="portfolio.html">Portfolio</a>
+				    	</li>
+				    	<li class="nav-item">
+				        	<a class="nav-link activeLink hoverLinkDefault" href="contact.html">Contact</a>
+				    	</li>
+				    </ul>
+				</div>
+			</div>
+			<div class="col-lg-2"></div>
+		</nav>
+	</div>
 
-		<!--Connect section-->
-		<aside>
-
-			<h2>Connect with me</h2>
-
-			<a href="https://github.com/hcandelaria" target="_blank"><img src="images/Github.png" alt="github"></a>
-			<a href="https://www.linkedin.com/in/hector-candelaria-986347136/" target="_blank"><img src="images/LinkedIn.png" alt="linkedin"></a>
-			<a href="https://stackoverflow.com/users/7154195/hector-candelaira?tab=profile" target="_blank"><img src="images/Stackoverflow.png" alt="stackoverflow"></a>
-		</aside>
+	<!--Body Container-->
+	<div class="container-fluid">
+		<div class="row" id="bodyContent">
+			<div class="col-md-2">
+			</div>
+			<!--Contact Section-->
+			<section class="col-md-5" id="contactSection">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 bottom-border">
+							<h2 class="text-left">Contact</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<form>
+  								<div class="form-group">
+    								<label class="form-control-label" for="formGroupExampleInput">Name</label>
+    								<input type="text" class="form-control" id="formGroupExampleInput" placeholder="John Smith">
+    								<label for="exampleFormControlInput1">Email address</label>
+    								<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    								<label for="exampleFormControlTextarea1">Message</label>
+    								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    								<br>
+  									<button type="button" class="btn btn-primary">Submit</button>
+  								</div>
+  							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="col-md-1">
+			</div>
+			<!--Connect Section-->
+			<aside class="col-md-2">
+				<div class="container" id="connectSection">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="text-center bottom-border">Connect with me</h2>
+						</div>
+					</div>
+					<div class="row">
+						<!--Github image link-->
+						<div class="col-md-4">
+							<a href="https://github.com/hcandelaria" target="_blank"><img class="img-fluid rounded mx-auto d-block connectLinks" src="images/Github.png" alt="github"></a>
+						</div>
+						<!--LinkedIn image link-->
+						<div class="col-md-4">
+							<a href="https://www.linkedin.com/in/hector-candelaria-986347136/" target="_blank"><img class="img-fluid rounded mx-auto d-block connectLinks" src="images/LinkedIn.png" alt="linkedin"></a>
+						</div>
+							<!--Stackoverflow image link-->
+						<div class="col-md-4">
+							<a href="https://stackoverflow.com/users/7154195/hector-candelaira?tab=profile" target="_blank"><img class="img-fluid rounded mx-auto d-block connectLinks" src="images/Stackoverflow.png" alt="stackoverflow"></a>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<div class="col-md-2">
+			</div>
+		</div>
 	</div>
 	<!--Footer-->
-	<footer>
-		<h5>© Copyright 2017 Hector Candelaria</h5>
+	<footer class="fixed-bottom text-center">
+		<h6>© Copyright 2017 Hector Candelaria</h6>
 	</footer>
-
 </body>
 </html>
